@@ -1,0 +1,75 @@
+
+<div class="col-lg-12">
+  <hr style=" color:black; background-color:black; height:3px;">
+  <h3 class="text-center" id="c3js_exemple"> C3 JS exmple de chart</h3>
+  <hr style=" color:black; background-color:black; height:3px;">
+  <div class="rows">
+    <div ng-controller="chartC3DemoController">
+      <div class="col-md-6 col-lg-6">
+        <h3 class="text-center">courbe </h3>
+        <div  id="chart"></div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <h3 class="text-center">Bar </h3>
+        <div  id="chartBar"></div>
+      </div>
+
+      <div class="rows" >
+        <div class="row">
+          <div class="col-sm-offset-4 col-sm-5 text-center">
+            <div class="btn-group  btn-success" data-toggle="buttons">
+              <label class="btn btn-lg" ng-click='anime_Progress_Advance()'><input type="radio">Click for Animate</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <h3 class="text-center">Donut </h3>
+        <div  id="chartDonut"></div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <h3 class="text-center">Progress Advance </h3>
+        <div  id="Q_Advance"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+      <hr style=" color:black; background-color:black; height:3px;">
+      <h3 class="text-center"> Chart JS exmple de chart
+        <hr style=" color:black; background-color:black; height:3px;">
+    </div>
+    <div ng-controller="chartDemoController">
+      <div class="col-md-6 col-lg-6">
+        <h3 class="text-center">Radar </h3>
+        <canvas id='radarContexte'  height="150"> </canvas>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <h3 class="text-center">Donut </h3>
+        <canvas id='DonutContexte'  height="150"> </canvas>
+      </div>
+
+      <div class="rows" >
+        <div class="row">
+          <div class="col-sm-offset-4 col-sm-5 text-center">
+            <div class="btn-group  btn-success" data-toggle="buttons">
+              <a class="btn btn-lg" ng-click='anime_Progress_Advances()'><input type="radio">Click for Animate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <h3 class="text-center">Bar </h3>
+        <canvas id='barContexte'  height="150"> </canvas>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <h3 class="text-center">courbe </h3>
+        <canvas id='lineContext' height="150"> </canvas>
+      </div>
+    </div>
+  </div>

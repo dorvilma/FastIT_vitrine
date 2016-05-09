@@ -1,0 +1,49 @@
+
+  <!-- uiView: content -->
+  <div ui-view="content" class="ng-scope" ng-cloak>
+  <div class="jumbotron text-center ng-scope"  style="border-radius: 20px ;">
+    <h1>Fast IT FIN</h1>
+    <p class="lead">
+      <br>
+      L'équipe Fast IT vous souhaite la bienvenue
+    </p>
+    <p class="animated infinite rubberBand" >
+      <button type="button" class="btn btn-lg btn-success" >Nos projet</button>
+    </p>
+</div>
+<div class="row ng-scope">
+</div>
+<div class="ng-scope"></div>
+</div>
+<div ng-controller="CarouselDemoCtrl" ng-cloak>
+  <div >
+    <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" >
+      <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" >
+        <img ng-src="{{slide.image}}" style="margin:auto;" class="img-responsive">
+        <div class="carousel-caption">
+          <h4>Slide {{slide.id}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </uib-slide>
+    </uib-carousel>
+  </div>
+</div>
+<div  ng-controller="new_actu_list" ng-cloak>
+  <h2 > <b> Liste d'actualité </b> <span class="badge" ng-cloak>{{ arrayListActu.length}}</span></h2>
+  <hr>
+  <div ng-repeat="actualite in arrayListActu" >
+    <div class="row jumbotron "  style="border-radius: 20px ;" ng-cloak >
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <img src="{{ actualite.img_actu}}" alt="image"  class="img-responsive .img-thumbnail"/>
+      </div>
+      <div class="col-sm-9 col-md-9 col-lg-9">
+        <h3><b> <a href="/detailArticle" ng-cloak> {{ actualite.title_actu }} </a> </b>    <small>- {{ actualite.name_project_actu }}  - </small></h3>
+        <p> {{ actualite.data_publish_actu | date : "d/M/y  h:m" }} </p>
+        <p class="text-justify" ng-cloak>
+          {{ actualite.content_actu }}
+        </p>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>

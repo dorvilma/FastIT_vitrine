@@ -1,0 +1,29 @@
+{
+  "name": "site_vitrine",
+  "description": "a Sails application",
+  "main": "app.js",
+  "authors": [
+    "sabri"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6",
+    "angular-animate": "^1.5.5",
+    "c3": "^0.4.10",
+    "Chart.js": "^1.1.1"
+  },
+  "devDependencies": {
+    "angular-translate": "^2.11.0"
+  }
+}
