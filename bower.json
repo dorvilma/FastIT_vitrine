@@ -21,7 +21,9 @@
     "bootstrap": "^3.3.6",
     "angular-animate": "^1.5.5",
     "c3": "^0.4.10",
-    "Chart.js": "^1.1.1"
+    "Chart.js": "^1.1.1",
+    "bootstrap-material-design": "^0.5.10",
+    "angular-bootstrap": "^1.3.3"
   },
   "devDependencies": {
     "angular-translate": "^2.11.0"
